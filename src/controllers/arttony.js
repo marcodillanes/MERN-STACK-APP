@@ -1,4 +1,4 @@
-/* RapidAPI Movie API
+//RapidAPI Movie API
 
 const axios = require("axios");
 
@@ -21,4 +21,4 @@ axios
     console.error(error);
   });
 
-module.exports = axios*/
+module.exports = options
