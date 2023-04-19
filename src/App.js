@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+const express = require('express');
+const router = require("../routes/movie-routes");
+const app = express
+
+app.use("/movie", router)
 
 function App() {
   return (
