@@ -12,8 +12,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 //controllers
-const movieController = require('./server/controllers/movies_controller')
-app.use('/api/movies', movieController)
+const moviesController = require('./server/controllers/movies_controller')
+app.use('/api/movies', moviesController)
 
 //listen 
 app.listen(4005, () => {
