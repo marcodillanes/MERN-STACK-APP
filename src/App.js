@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import options from './controllers/arttony'
+import options from "./server/controllers/arttony";
 
 const axios = require('axios')
 
