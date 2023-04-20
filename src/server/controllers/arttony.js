@@ -9,7 +9,7 @@ const options = {
 };
 
 fetch(
-  "https://movie-database-alternative.p.rapidapi.com/?s=Avengers%20Endgame&r=json&page=1",
+  "https://movie-database-alternative.p.rapidapi.com/?s=Conjuring&r=json&page=1",
   options
 )
   .then((response) => response.json())

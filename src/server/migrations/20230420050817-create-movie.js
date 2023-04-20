@@ -25,6 +25,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
+      poster: {
+        type: Sequelize.STRING,
+        allowNull: false
+      }
     });
   },
   async down(queryInterface, Sequelize) {

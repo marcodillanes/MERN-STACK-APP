@@ -34,6 +34,10 @@ module.exports = (sequelize, DataTypes) => {
     imdb_id: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    poster: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   }, {
     sequelize,
