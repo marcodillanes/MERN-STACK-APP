@@ -1,5 +1,5 @@
 export function GenreList(props){
-    let genres = ['action', 'adventure', 'romance', 'horror', 'comedy', 'thriller', 'suspense', 'mystery', 'drama', 'western', 'science fiction', 'romanctic comedy']
+    let genres = ['action', 'adventure', 'romance', 'horror', 'comedy', 'thriller', 'suspense', 'mystery', 'drama', 'western', 'science fiction', 'romantic comedy']
 
     return(
         <div>
