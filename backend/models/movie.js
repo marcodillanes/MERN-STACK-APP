@@ -9,8 +9,9 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
+    static associate() {
       // define association here
+      
     }
   }
   Movie.init({
@@ -32,17 +33,21 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     imdb_id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     poster: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    rating_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   }, {
     sequelize,
     modelName: 'Movie',
-    tableNanme: 'movies',
+    tableNanme: 'Movies',
     timestamps: false
   });
   return Movie;
