@@ -1,10 +1,13 @@
 import './App.css';
-import { useEffect, useState, useRef } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Gallery } from './components/gallery'
+import { useEffect, useState, useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Gallery } from './components/gallery';
+import { Navbar } from './components/navbar';
+import { GenreList } from './components/genreList';
 
 function App() {
   let [data, setData] = useState([])
+  let [search, setSearch] = useState('')
 
   useEffect(() => {
     setData([
@@ -28,6 +31,8 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar setSearch={setSearch} />
+        <GenreList/>
         <Gallery data={data} />
       </Router>
     </div>
